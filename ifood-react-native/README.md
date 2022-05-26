@@ -1,0 +1,1 @@
+## Clone do app Ifood usando React Native, Styled Components e React Navigation

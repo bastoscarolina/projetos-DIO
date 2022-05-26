@@ -1,0 +1,43 @@
+.body {
+    background: #fafafa;
+}
+
+
+
+.personagem{
+    width: 60px;
+    height: 60px;
+    background-image: url(dino.png);
+    position: absolute ; /*fica na posição definifa independente do que estiver em volta*/
+    bottom: 0;
+}
+.coqueiro {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(cactus.png);
+}
+.game-over{
+    text-align: center;
+    color: #666666;
+    margin-top: 50%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@keyframes slideright {
+    from{
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear; /* animação | velocidade da animação | de maneira infinita | tempo de animação (ela não altera a velocidade, vai linear)*/
+    width: 100%;
+    height: 200px;
+}

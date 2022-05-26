@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(100, 148, 237, 0.425);
+}
+
+#main-play-area{
+    background-color: rgba(0, 0, 0, 0.582);
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 20px;
+}
+
+#hero{
+    position: relative;
+    height: 80px;
+    width: 100px;
+    left: 20px;
+    top:250px
+}
+
+.shot{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.witch{
+    position: relative;
+    height: 80px;
+    width: 100px;
+}
+
+.witch-transition{
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.dead-witch{
+    position: relative;
+    height: 80px;
+    width: 100px;
+    opacity: 0;
+}
+
+.start-button{
+    background-color: rgba(100, 148, 237, 0.425);
+    margin: 20px;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.game-instructions{
+    position: relative;
+    height: 40vh;
+    width: 40vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto auto;
+}

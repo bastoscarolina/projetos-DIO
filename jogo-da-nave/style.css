@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#container{
+    background-image: url(https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size:contain;  
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fundoGame{
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.233);
+    border:1px solid #000;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+}
+
+#jogador{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: 9em;
+    left: 10em;
+    background-image: url(https://static.wikia.nocookie.net/vm-doctor-who/images/c/cd/Doctor-who-tardis-png.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#inimigo1{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    top: 15em;
+    left: 60em;
+    background-image: url(./img/dalek.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#inimigo2{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    bottom: 4.8em;
+    left: 60em;
+    background-image: url(./img/wheeping-angel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#amigo{
+    width: 100px;
+    height: 115px;
+    position: absolute;
+    bottom: 4.8em;
+    left: 10em;
+    background-image: url(./img/clara-oswald-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#botao-comecar{
+    margin: auto;
+    width: 10em;
+    height: 5em;
+    border: 1px solid purple;
+    border-radius: 20px;
+    background-color: rgba(137, 43, 226, 0.623);
+    color: purple;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.animacao{
+    background-image: url(https://static.wikia.nocookie.net/vm-doctor-who/images/c/cd/Doctor-who-tardis-png.png);
+    animation: play .5s steps(2) infinite;
+
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation:play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+}
+
+@keyframes play{
+    from {background-position: 0px;}
+    to{background-position: -512px;}
+}
+
+@-webkit-keyframes play{
+    from {background-position: 0px;}
+    to{background-position: -512px;}
+    
+}
+@-moz-keyframes play{
+    from {background-position: 0px;}
+    to{background-position: -512px;}
+}
+
+@-ms-keyframes play{
+    from {background-position: 0px;}
+    to{background-position: -512px;}
+}
+
+@-o-keyframes play{
+    from {background-position: 0px;}
+    to{background-position: -512px;}
+}
+
+#ataque{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}
+
+#placar{
+    width: 450px;
+    height: 100px;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+    border: 1px solid purple;
+    border-radius: 20px;
+    background-color: rgba(137, 43, 226, 0.295);
+    color: antiquewhite;
+    font-size: 16px;
+}
